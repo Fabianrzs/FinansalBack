@@ -1,6 +1,8 @@
-﻿namespace Infrastructure
+﻿using Infrastructure.Interface;
+
+namespace Infrastructure
 {
-    public class Repository
+    public class Repository<TEntity> :  IRepository<TEntity> where TEntity: class
     {
         
     }
