@@ -10,9 +10,9 @@ namespace Infrastructure
         {
             Context.Dispose();
         }
-        public int Commit()
+        public void Commit()
         {
-            return Context.SaveChanges();
+            Context.SaveChanges();
         }
     }
 }

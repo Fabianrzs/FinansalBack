@@ -6,7 +6,7 @@ namespace Infrastructure.Interface
     public interface IUnitOfWork : IDisposable
     {
         public AppContext Context { get; set; }
-        public int Commit();
+        public void Commit();
 
     }
 }
